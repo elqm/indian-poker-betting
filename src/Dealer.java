@@ -5,7 +5,7 @@ public class Dealer {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		Player user1 = new User1();
 		Player user2 = new User2();
 		Coin user1Coin = new Coin1();
