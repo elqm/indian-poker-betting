@@ -1,6 +1,3 @@
-import java.util.Random;
-import java.util.Scanner;
-
 public class User1 extends Player { 
 	
 	Coin1 coin1 = new Coin1();

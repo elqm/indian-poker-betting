@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class User2 extends Player {
 	
 	Coin2 coin2 = new Coin2();
@@ -44,18 +42,11 @@ public class User2 extends Player {
 	@Override
 	public void foldGame(int user1Card, int user2Card, int userBet, int userRaise) {
 		
-		int max = 0;
-		int min = 0;
-		
 		if(user1Card > user2Card) {
-			max = user1Card;
-			min = user2Card;
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchWinCoin(userBet, userRaise) + "]]\n");
 		} else if(user1Card == user2Card) {
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchWinCoin(userBet, userRaise) + "]]\n");
 		} else {
-			max = user2Card;
-			min = user1Card;
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchWinCoin(userBet, userRaise) + "]]\n");
 		}
 
@@ -63,19 +54,12 @@ public class User2 extends Player {
 
 	@Override
 	public void matchGame(int user1Card, int user2Card, int userBet, int userRaise) {
-
-		int max = 0;
-		int min = 0;
 		
 		if(user1Card > user2Card) {
-			max = user1Card;
-			min = user2Card;
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchLoseCoin(userBet, userRaise) + "]]\n");
 		} else if(user1Card == user2Card) {
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchLoseCoin(userBet, userRaise) + "]]\n");
 		} else {
-			max = user2Card;
-			min = user1Card;
 			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.matchWinCoin(userBet, userRaise) + "]]\n");
 		}
 		

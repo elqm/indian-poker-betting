@@ -55,7 +55,7 @@ public class Dealer {
 			System.out.println("5. 인디언 포커 레이즈(Raise)");
 			System.out.println("6. 인디언 포커 포기(Fold)");
 			System.out.println("7. 인디언 포커 승부(Match)");
-			System.out.println("9. 게임 초기화(Reset)");
+			System.out.println("9. 인디언 포커 계속 진행(Continue)");
 			System.out.println("0. 게임 종료(Exit)");
 			System.out.println("========================");
 			System.out.print("메뉴 선택 : ");
@@ -213,7 +213,7 @@ public class Dealer {
 				}
 
 				break;
-			case 8 :
+			case 9 :
 				if(user1Coin.coin() == 0 || user2Coin.coin() == 0) {
 					if(user1Coin.coin() == 0 && user2Coin.coin() != 0) {
 						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
