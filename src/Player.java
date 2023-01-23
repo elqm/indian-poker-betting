@@ -62,11 +62,5 @@ public class Player {
 		System.out.println("\n인디언 포커를 종료합니다.\n");
 
 	}
-
-	public void resetGame() {
-
-		System.out.println("\n인디언 포커를 초기화합니다.\n");
-
-	}
 	
 }

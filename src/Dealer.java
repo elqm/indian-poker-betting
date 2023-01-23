@@ -54,8 +54,7 @@ public class Dealer {
 			System.out.println("4. 카드 공개");
 			System.out.println("5. 인디언 포커 레이즈(Raise)");
 			System.out.println("6. 인디언 포커 포기(Fold)");
-			System.out.println("7. 인디언 포커 승부(Match)");			
-			System.out.println("8. 인디언 포커 계속 진행(Continue)");
+			System.out.println("7. 인디언 포커 승부(Match)");
 			System.out.println("9. 게임 초기화(Reset)");
 			System.out.println("0. 게임 종료(Exit)");
 			System.out.println("========================");
@@ -247,21 +246,6 @@ public class Dealer {
 				user1Card = 0;
 				user2Card = 0;
 				user1.continueGame();
-				break;
-			case 9 :
-				betCount = 0;
-				shareCount1 = 0;
-				shareCount2 = 0;
-				selectCount = 0;
-				openCount = 0;
-				raiseCount = 0;
-				matchCount = 0;
-				foldCount = 0;
-				userBet = 0;
-				userRaise = 0;
-				user1Card = 0;
-				user2Card = 0;
-				user1.resetGame();
 				break;
 			case 0 :
 				user1.exitGame();
