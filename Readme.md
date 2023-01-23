@@ -33,8 +33,8 @@
 
 - 유저2가 유저1의 카드를 확인하고 반응을 보인다.
 
-        예) 입꼬리 살짝 올리기.(상대의 카드 범위 1~2 || 9~10)
-            포커페이스 유지.(상대의 카드 범위 3~8)
+        예) 입꼬리 살짝 올리기.(상대의 카드 범위 1 || 10)
+            포커페이스 유지.(상대의 카드 범위 2~9)
 
 - 유저1는 유저2의 반응을 확인하고 레이즈할지, 승부할지, 폴드(fold/죽을지)할지 결정한다.
 
@@ -54,11 +54,7 @@
 
 - 누군가의 코인이 0개가 되었을 때, 비로소 게임이 종료된다.
 
-- 게임 중간에 게임을 초기화(reset)할 수도, 종료(exit)를 할 수도 있다.
-
-- 게임을 초기화할 경우, 처음으로 되돌아가 코인이 다시 20개가 된다.
-
-- 종료할 경우, 그대로 카드 게임을 종료한다.
+- 게임 중간에 종료(exit)를 할 수도 있다.
 
 
 
@@ -67,30 +63,40 @@
 
 
 
-![1  카드 배분](https://user-images.githubusercontent.com/121847260/213863828-03c757d5-3c8c-49ff-a680-c6f2a8221745.png)
+![1  베트](https://user-images.githubusercontent.com/121847260/214047467-b591a513-a2c3-49b7-af97-6c4dd12ef3ee.png)
 
 
-![2  카드 선택](https://user-images.githubusercontent.com/121847260/213863829-e3f2b6f8-fdf7-46f8-8fd5-08501e55bfc4.png)
+![2  카드 배분](https://user-images.githubusercontent.com/121847260/214047468-0c16cb9c-c8ce-4ca9-a3a3-83332acd1671.png)
 
 
-![3  카드 공개](https://user-images.githubusercontent.com/121847260/213863831-efe67d5a-223a-46c3-8850-4230aa923cd8.png)
+![3  카드 선택](https://user-images.githubusercontent.com/121847260/214047470-d7df5f98-3289-4704-bf04-c1891d9ede7a.png)
 
 
-![4  게임 승부](https://user-images.githubusercontent.com/121847260/213863833-13bae567-f352-40f2-9249-611ad539ba99.png)
+![4  카드 공개](https://user-images.githubusercontent.com/121847260/214047480-a5da2639-27c1-459c-add4-ba62c9ca268d.png)
 
 
-![5  게임 포기](https://user-images.githubusercontent.com/121847260/213863834-336f9c10-b90d-46a3-aec6-f89e886c8d0f.png)
+![5  레이즈](https://user-images.githubusercontent.com/121847260/214047486-03165ca4-fe0e-4c4c-b6a9-cdff3dbf59d3.png)
 
 
-![6  게임 종료](https://user-images.githubusercontent.com/121847260/213863835-d645c4ac-b6e2-4200-a865-b059056c239f.png)
+![6  게임 포기](https://user-images.githubusercontent.com/121847260/214047492-84ddd053-65a9-420b-ab01-0576d90381b2.png)
 
 
-![7  게임 재시작](https://user-images.githubusercontent.com/121847260/213863837-f44a22b5-07bc-4396-802b-691b2999ac22.png)
+![7  게임 승부](https://user-images.githubusercontent.com/121847260/214047498-67dc09ab-e9de-4489-8d4a-d49e9636f29f.png)
+
+
+![8  게임 계속 진행](https://user-images.githubusercontent.com/121847260/214047500-63a7c50f-27ed-4eb2-bd73-27eb8b8159f8.png)
+
+
+![10  게임 종료](https://user-images.githubusercontent.com/121847260/214047507-a8c9c767-f304-41fe-8917-d582891f340e.png)
+
+
 
 
 
 # [클래스 다이어그램]
 
 
+
+![인디언 포커 클래스 다이어그램 drawio](https://user-images.githubusercontent.com/121847260/214082660-0ff62e0d-6be6-4d1f-82ec-d11d8f1dc819.png)
 
 
