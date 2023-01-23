@@ -126,10 +126,10 @@ public class User1 extends Player {
 	}
 
 	@Override
-	public void restartGame() {
+	public void resetGame() {
 		
 		System.out.println("\n[RESTART!]");
-		System.out.println("[인디언 포커를 다시 시작합니다!]\n");
+		System.out.println("[인디언 포커를 초기화합니다!]\n");
 
 	}
 	
