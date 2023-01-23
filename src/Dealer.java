@@ -15,7 +15,7 @@ public class Dealer {
 		int[] cardArr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		int[] cardArr2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-		int userBet = 0;
+		int userBet = 0; 
 		int userRaise = 0;
 
 		/* 중복 베트 방지 카운트 */
