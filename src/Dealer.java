@@ -44,7 +44,7 @@ public class Dealer {
 		int user1Card = 0;
 		int user2Card = 0;
 
-		while(user1Coin.Coin() >= 0 || user2Coin.Coin() >= 0) {
+		while(user1Coin.coin() >= 0 || user2Coin.coin() >= 0) {
 			System.out.println("======= 인디언 포커 =======");
 			System.out.println("1. 인디언 포커 베트(Bet)");
 			System.out.println("2. 카드 배분");
@@ -66,14 +66,14 @@ public class Dealer {
 					System.out.print("\n- 베트를 진행해주십시오 : ");
 					userBet = sc.nextInt();
 					if(betCount == 0) {
-						if(userBet <= user1Coin.Coin() && userBet <= user2Coin.Coin()) {
+						if(userBet <= user1Coin.coin() && userBet <= user2Coin.coin()) {
 							user1.betGame(userBet);
 							user2.callGame(userBet);
 							++betCount;
-						} else if(userBet > user1Coin.Coin()) {
+						} else if(userBet > user1Coin.coin()) {
 							System.out.println("\n[유저1(나)이 가진 코인보다 더 많이 베트했습니다.]");
 							System.out.println("[베트를 다시 진행해주십시오.]\n");
-						} else if(userBet > user2Coin.Coin()) {
+						} else if(userBet > user2Coin.coin()) {
 							System.out.println("\n[유저2(상대)가 가진 코인보다 더 많이 베트했습니다.]");
 							System.out.println("[베트를 다시 진행해주십시오.]\n");
 						}
@@ -137,27 +137,27 @@ public class Dealer {
 					System.out.println("\n[아직 카드를 선택하지 않았습니다.]\n");
 				} else if(openCount == 0) {
 					System.out.println("\n[아직 카드를 공개하지 않았습니다.]\n");
-				} else if(user1Coin.Coin() == 0 || user1Coin.Coin() == 0) {
-					if(user1Coin.Coin() == 0) {
-						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.Coin() + "]]");
-						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.Coin() + "]]");
+				} else if(user1Coin.coin() == 0 || user1Coin.coin() == 0) {
+					if(user1Coin.coin() == 0) {
+						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
+						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]");
 						System.out.println("[레이즈를 진행할 수 없습니다.]\n");
 					} else {
-						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.Coin() + "]]");
-						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.Coin() + "]]");
+						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
+						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]");
 						System.out.println("[레이즈를 진행할 수 없습니다.]\n");
 					}
 				} else if(raiseCount == 0 && foldCount == 0 && matchCount == 0) {
 					System.out.print("\n- 레이즈를 진행해주십시오 : ");
 					userRaise = sc.nextInt();
-					if(userRaise <= user1Coin.Coin() && userRaise <= user2Coin.Coin()) {
+					if(userRaise <= user1Coin.coin() && userRaise <= user2Coin.coin()) {
 						user1.raiseGame(userRaise);
 						user2.raiseGame(userRaise);
 						++raiseCount;
-					} else if(userRaise > user1Coin.Coin()) {
+					} else if(userRaise > user1Coin.coin()) {
 						System.out.println("\n[유저1(나)이 가진 코인보다 더 많이 레이즈했습니다.]");
 						System.out.println("[레이즈를 다시 진행해주십시오.]\n");
-					} else if(userRaise > user2Coin.Coin()) {
+					} else if(userRaise > user2Coin.coin()) {
 						System.out.println("\n[유저2(상대)가 가진 코인보다 더 많이 레이즈했습니다.]");
 						System.out.println("[레이즈를 다시 진행해주십시오.]\n");
 					}
@@ -213,20 +213,20 @@ public class Dealer {
 
 				break;
 			case 8 :
-				if(user1Coin.Coin() == 0 || user2Coin.Coin() == 0) {
-					if(user1Coin.Coin() == 0 && user2Coin.Coin() != 0) {
-						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.Coin() + "]]");
-						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.Coin() + "]]\n");
+				if(user1Coin.coin() == 0 || user2Coin.coin() == 0) {
+					if(user1Coin.coin() == 0 && user2Coin.coin() != 0) {
+						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
+						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]\n");
 						System.out.println("[유저1(나)의 패배했습니다...]");
 						System.out.println("[인디언 포커를 종료합니다.]\n");
-					} else if(user2Coin.Coin() == 0 && user1Coin.Coin() != 0){
-						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.Coin() + "]]");
-						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.Coin() + "]]\n");
+					} else if(user2Coin.coin() == 0 && user1Coin.coin() != 0){
+						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
+						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]\n");
 						System.out.println("[유저1(나)이 승리했습니다!!!]");
 						System.out.println("[인디언 포커를 종료합니다.]\n");
 					} else {
-						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.Coin() + "]]");
-						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.Coin() + "]]\n");
+						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
+						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]\n");
 						System.out.println("[무승부입니다.]");
 						System.out.println("[인디언 포커를 종료합니다.]\n");
 					}

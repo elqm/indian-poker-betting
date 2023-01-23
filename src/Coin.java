@@ -3,7 +3,7 @@ public class Coin {
 
 	private static int coin = 20;
 	
-	public int Coin() {
+	public int coin() {
 		return coin;
 	}
 	

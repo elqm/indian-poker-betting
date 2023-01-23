@@ -4,7 +4,7 @@ public class Coin1 extends Coin{
 	private static int coin1 = 20;
 	
 	@Override
-	public int Coin() {
+	public int coin() {
 		return coin1;
 	}
 	
