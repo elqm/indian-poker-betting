@@ -5,10 +5,10 @@ public class User2 extends Player {
 	Coin2 coin2 = new Coin2();
 	
 	@Override
-	public void callGame(int num) {
+	public void callGame(int num2) {
 
-		System.out.println("[유저2(상대)가 [" + num + "]개를 베트했습니다.]");
-		System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.callCoin(num) + "]]\n");
+		System.out.println("[유저2(상대)가 [" + num2 + "]개를 베트했습니다.]");
+		System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.callCoin(num2) + "]]\n");
 		
 	}
 	
@@ -19,9 +19,9 @@ public class User2 extends Player {
 	}
 	
 	@Override
-	public void selectCard(int num) {
+	public void selectCard(int num2) {
 		
-		System.out.println("[유저2(상대)가 카드 [" + num + "]장을 선택했습니다.]\n");
+		System.out.println("[유저2(상대)가 카드 [" + num2 + "]장을 선택했습니다.]\n");
 		
 	}
 	
@@ -34,10 +34,10 @@ public class User2 extends Player {
 	}
 	
 	@Override
-	public void raiseGame(int num) {
+	public void raiseGame(int userRaise) {
 		
-		System.out.println("[유저2(상대)가 [" + num + "]개를 레이즈했습니다.]");
-		System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.raiseCoin(num) + "]]\n");
+			System.out.println("[유저2(상대)가 [" + userRaise + "]개를 레이즈했습니다.]");
+			System.out.println("[유저2(상대)의 남은 코인 수 : [" + coin2.raiseCoin(userRaise) + "]]\n");
 		
 	}
 	

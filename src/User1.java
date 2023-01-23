@@ -6,10 +6,10 @@ public class User1 extends Player {
 	Coin1 coin1 = new Coin1();
 	
 	@Override
-	public void betGame(int num) {
+	public void betGame(int num1) {
 
-		System.out.println("\n[유저1(나)이 [" + num + "]개를 베트했습니다.]");
-		System.out.println("[유저1(나)의 남은 코인 수 : [" + coin1.betCoin(num) + "]]");
+		System.out.println("\n[유저1(나)이 [" + num1 + "]개를 베트했습니다.]");
+		System.out.println("[유저1(나)의 남은 코인 수 : [" + coin1.betCoin(num1) + "]]");
 		
 	}
 	
@@ -20,9 +20,9 @@ public class User1 extends Player {
 	}
 
 	@Override
-	public void selectCard(int num) {
+	public void selectCard(int num1) {
 		
-		System.out.println("\n[유저1(나)이 카드 [" + num + "]장을 선택했습니다.]");
+		System.out.println("\n[유저1(나)이 카드 [" + num1 + "]장을 선택했습니다.]");
 
 	}
 
@@ -32,7 +32,7 @@ public class User1 extends Player {
 		System.out.println("\n[유저1(나)이 유저2(상대)에게 카드를 공개합니다.]");
 		System.out.println("[유저2(상대)가 유저1(나)의 카드를 확인했습니다.]");
 
-		if(num1 == 1 || num1 == 2 || num1 == 9 || num1 == 10) {
+		if(num1 == 1 || num1 == 10) {
 			System.out.println("[유저2(상대)의 입꼬리가 슬며시 올라갑니다.]\n");
 		} else {
 			System.out.println("[유저2(상대)가 포커페이스를 유지합니다.]\n");
@@ -41,9 +41,10 @@ public class User1 extends Player {
 	}
 	
 	@Override
-	public void raiseGame(int num) {
-		System.out.println("\n[유저1(나)이 [" + num + "]개를 레이즈했습니다.]");
-		System.out.println("[유저1(나)의 남은 코인 수 : [" + coin1.raiseCoin(num) + "]]");
+	public void raiseGame(int userRaise) {
+		
+		System.out.println("\n[유저1(나)이 [" + userRaise + "]개를 레이즈했습니다.]");
+		System.out.println("[유저1(나)의 남은 코인 수 : [" + coin1.raiseCoin(userRaise) + "]]");
 		
 	}
 	
