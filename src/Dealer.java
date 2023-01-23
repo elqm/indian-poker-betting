@@ -12,9 +12,11 @@ public class Dealer {
 		Coin user2Coin = new Coin2();
 		Random ranCard = new Random();
 
+		/* 인디언 포커 게임 카드 */
 		int[] cardArr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		int[] cardArr2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+		/* 베트와 레이즈할 코인 개수 */
 		int userBet = 0; 
 		int userRaise = 0;
 
