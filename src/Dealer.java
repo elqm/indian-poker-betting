@@ -222,12 +222,12 @@ public class Dealer {
 					if(user1Coin.coin() == 0 && user2Coin.coin() != 0) {
 						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
 						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]\n");
-						System.out.println("[유저1(나)의 패배했습니다...]");
+						System.out.println("[유저1(나)이 인디언 포커를 패배했습니다...]");
 						System.out.println("[인디언 포커를 종료합니다.]\n");
 					} else if(user2Coin.coin() == 0 && user1Coin.coin() != 0){
 						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
 						System.out.println("[유저2(상대)의 남은 코인 수 : [" + user2Coin.coin() + "]]\n");
-						System.out.println("[유저1(나)이 승리했습니다!!!]");
+						System.out.println("[유저1(나)이 인디언 포커를 승리했습니다!!!]");
 						System.out.println("[인디언 포커를 종료합니다.]\n");
 					} else {
 						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
