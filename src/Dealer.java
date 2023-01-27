@@ -110,7 +110,7 @@ public class Dealer {
 					++selectCount;
 					user1.selectCard(1);
 					user2.selectCard(1);
-				} else if(selectCount == 1 ){
+				} else if(selectCount == 1){
 					System.out.println("\n[이미 카드를 선택했습니다.]\n");
 				}
 				break;
@@ -214,6 +214,10 @@ public class Dealer {
 
 				break;
 			case 9 :
+				if(raiseCount == 1 && matchCount == 0) {
+					System.out.println("\n[아직 승부를 겨루지 않았습니다.]\n");
+					break;
+				}
 				if(user1Coin.coin() == 0 || user2Coin.coin() == 0) {
 					if(user1Coin.coin() == 0 && user2Coin.coin() != 0) {
 						System.out.println("\n[유저1(나)의 남은 코인 수 : [" + user1Coin.coin() + "]]");
